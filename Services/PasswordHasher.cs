@@ -1,14 +1,13 @@
-﻿using AspNetCore.JwtAuthentication.PasswordHasing.Plugin.Interfaces;
-using Microsoft.AspNetCore.Cryptography.KeyDerivation;
+﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using System;
 using System.Linq;
 using System.Security.Cryptography;
 
-namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin.Services
+namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin
 {
     //More information about PasswordHasher here: https://www.blinkingcaret.com/2017/11/29/asp-net-identity-passwordhash/
     //  https://docs.microsoft.com/en-us/aspnet/core/security/data-protection/consumer-apis/password-hashing?view=aspnetcore-5.0
-    class PasswordHasher : IPasswordHasher
+    public class PasswordHasher : IPasswordHasher
     {
         public string GenerateIdentityV3Hash(string password, KeyDerivationPrf prf = KeyDerivationPrf.HMACSHA256, int iterationCount = 10000, int saltSize = 16)
         {

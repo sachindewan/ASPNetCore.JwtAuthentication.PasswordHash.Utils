@@ -5,7 +5,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin.Interfaces
+namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin
 {
     public interface ITokenService
     {
@@ -18,7 +18,7 @@ namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin.Interfaces
         /// <param name="issuerSigningKey"></param>
         /// <param name="expireIn"></param>
         /// <returns></returns>
-        string GenerateAccessToken(IEnumerable<Claim> claims,string validIssuer,string validAudience,string issuerSigningKey, string expireIn);
+        string GenerateAccessToken(IEnumerable<Claim> claims,string validIssuer=null,string validAudience=null,string issuerSigningKey=null, string expireIn=null);
         /// <summary>
         /// generate refresh token
         /// </summary>

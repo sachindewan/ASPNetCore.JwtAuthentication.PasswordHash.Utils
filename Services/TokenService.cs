@@ -1,5 +1,4 @@
-﻿using AspNetCore.JwtAuthentication.PasswordHasing.Plugin.Interfaces;
-using Microsoft.IdentityModel.Tokens;
+﻿using Microsoft.IdentityModel.Tokens;
 using System;
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
@@ -7,7 +6,7 @@ using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin.Services
+namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin
 {
     public class TokenService : ITokenService
     {

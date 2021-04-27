@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 
-namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin.Interfaces
+namespace AspNetCore.JwtAuthentication.PasswordHasing.Plugin
 {
     public interface IPasswordHasher
     {

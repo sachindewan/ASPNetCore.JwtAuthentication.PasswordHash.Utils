@@ -354,7 +354,7 @@
     "C:\\Users\\Sachin.Kumar11\\.nuget\\packages\\": {}
   },
   "project": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "restore": {
       "projectUniqueName": "C:\\Users\\Sachin.Kumar11\\source\\repos\\ASPNetCore.JwtAuthentication.PasswordHash.Utils\\AspNetCore.JwtAuthentication.PasswordHasing.Plugin.csproj",
       "projectName": "AspNetCore.JwtAuthentication.PasswordHasing.Plugin",
