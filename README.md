@@ -6,7 +6,7 @@ This Authentication library is used to generate the Json Web Token (JWT) via Ide
 and you can manage working with refresh tokens.
 
 Authentication
-asfend edited this page on Dec 17, 2019 · 11 revisions
+
 Simple Asp.Net Core Library to add support for Authentication via Identity and JWT. In order to use this library inside your Asp.Net Core you need to follow these steps.
 
 Step 1
