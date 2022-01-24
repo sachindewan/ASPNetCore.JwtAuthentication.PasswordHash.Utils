@@ -1,0 +1,17 @@
+const url = require('url');
+const water = require('./events');
+const myURL = new URL('https://example.org');
+myURL.pathname = '/a/b/c';
+myURL.search = '?d=e';
+myURL.hash = '#fgh';
+console.log(myURL.href);
+console.log('#################################');
+const pathname = '/a/b/c';
+const search = '?d=e';
+const hash = '#fgh';
+const myURL2 = new URL(`https://example.org${pathname}${search}${hash}`);
+console.log(myURL2);
+water.emit('waterFull');
+console.log('script executing');
+console.log('script still executing',new Date().toString());
+water.emit('tankEmptity');
